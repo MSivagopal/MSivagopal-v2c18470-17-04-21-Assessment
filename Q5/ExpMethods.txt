@@ -1,0 +1,38 @@
+package prac1;
+
+public class ExpMethods {
+	public static void main(String[] args) {
+		System.out.println("Arithmetic Exception");
+		try {
+			double k = 143 / 0;
+			System.out.println("the value of k: " + k);
+		}
+		catch (ArithmeticException e) {
+			System.out.println(e);
+			System.out.println("Error");
+
+		}
+		
+		System.out.println("NullPointer Exception");
+		try {
+			String k = null;
+			System.out.println("the value of k: " + k.length());
+		} 
+		catch (NullPointerException e) {
+			System.out.println(e);
+			System.out.println("Error");
+		}
+		
+		System.out.println("Array Out Of Index Exception");
+		try {
+			String s[] = new String[5];
+			s[7] = "siva";
+			System.out.println("the value " +s);
+		} 
+		catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println(e);
+			System.out.println("Error");
+		}
+		
+	}
+}

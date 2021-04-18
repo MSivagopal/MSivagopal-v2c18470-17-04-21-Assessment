@@ -1,0 +1,15 @@
+package prac1;
+
+public class NullPointExp {
+
+	public static void main(String[] args) {
+		try {
+			String k = null;
+			System.out.println("the value of k: " + k.length());
+		} 
+		catch (NullPointerException e) {
+			System.out.println(e);
+			System.out.println("Error");
+		}
+	}
+}

@@ -1,0 +1,26 @@
+package prac1;
+
+public class OveridingExp {
+
+	public static void main(String[] args)throws Exception{
+
+		Automobiles a = new Fourwheelers();
+		a.car("benz", 2015);
+	}
+}
+
+class Automobiles {
+
+	public void car(String Brand, int Model) {
+		System.out.println("Automobile Brand:" + Brand);
+		System.out.println("Automobile Model:" + Model);
+	}
+}
+
+class Fourwheelers extends Automobiles  {
+
+	public void car(String Brand, int Model) {
+		System.out.println("Fourwheelers Brand:" + Brand);
+		System.out.print("Fourwheelers Model:" + Model);
+	}
+}

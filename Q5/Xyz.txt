@@ -1,0 +1,33 @@
+package prac1;
+
+import java.util.Scanner;
+
+public class Xyz {
+
+	public static void main(String[] args) {
+
+		System.out.println("Enter the string1");
+		Scanner in = new Scanner(System.in);
+		String s1 = in.nextLine();
+
+		System.out.println("Enter the string2");
+		Scanner inn = new Scanner(System.in);
+		String s2 = inn.nextLine();
+
+		if (s1.length() != s2.length()) {
+
+			System.out.println("False");
+		}
+
+		else {
+
+			s1 = s1.concat(s1);
+			// System.out.println(s1);
+			// System.out.println(s1.indexOf(s2) != -1);
+			if (s1.indexOf(s2) != -1)
+				System.out.println("True");
+			else
+				System.out.println("False");
+		}
+	}
+}

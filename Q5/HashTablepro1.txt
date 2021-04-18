@@ -1,0 +1,28 @@
+package prac1;
+
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class HashTablepro1 {
+
+	public static void main(String[] args) {
+		Hashtable<Integer, String> table1 = new Hashtable<Integer, String>();
+		table1.put(121, "Master");
+		table1.put(150, "Theri");
+		table1.put(110, "Sarkar");
+
+		for (Entry<Integer, String> m : table1.entrySet()) {
+			System.out.println("collections: " + m.getKey() + " " + "Movie: " + m.getValue());
+		}
+		System.out.println(" ");
+		Set<Integer> s = table1.keySet();
+		Iterator<Integer> obj = s.iterator();
+		while (obj.hasNext()) {
+			Integer t = obj.next();
+			System.out.println("collections: " +t+" "+"Movie: " +table1.get(t));
+		}
+	}
+
+}
