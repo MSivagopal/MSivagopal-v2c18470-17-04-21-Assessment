@@ -1,0 +1,21 @@
+package prac3;
+
+public class FinallyExp1 {
+
+	public static void main(String[] args) {
+		try {
+			String ss = null;
+			System.out.println("the value " +ss.length());
+		} 
+		catch (NullPointerException e) {
+			System.out.println(e);
+			System.out.println("NullPointerException Error");
+		}
+		finally {
+			System.out.println("finally block will execute whether it has exception or not");
+		}
+	}
+
+}
+
+		
