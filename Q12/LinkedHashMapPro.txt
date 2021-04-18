@@ -1,0 +1,22 @@
+package prac3;
+
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Set;
+
+public class LinkedHashMapPro {
+
+	public static void main(String[] args) {
+		LinkedHashMap<Integer, String> map1 = new LinkedHashMap<Integer, String>();
+		map1.put(121, "Master");
+		map1.put(150, "Theri");
+		map1.put(110, "Sarkar");
+
+		Set<Integer> s = map1.keySet();
+		Iterator<Integer> obj = s.iterator();
+		while (obj.hasNext()) {
+			Integer t = obj.next();
+			System.out.println("collections: " + t + " " + "Movie: " + map1.get(t));
+		}
+	}
+}
