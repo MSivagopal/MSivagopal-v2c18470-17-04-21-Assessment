@@ -1,0 +1,35 @@
+package prac2;
+	
+	//normal thread
+	public class ThreadRunnable implements Runnable {
+
+		public static void main(String[] args) {
+			ThreadRunnable a = new ThreadRunnable();
+			Thread thread = new Thread(a);
+			thread.start();
+			try {
+				thread.sleep(5000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.println("Main thread is running");
+
+		}
+
+		@Override
+		public void run() {
+			System.out.println("thread is running");
+		}
+	}
+	/*	
+	//lambda thread using Runnable interface
+	public class ThreadRunnable{
+		public static void main(String[] args) {
+			Runnable r = ()->{System.out.println("thread is running");};
+			Thread thread = new Thread(r);
+			thread.start();
+			System.out.println("Main thread is running");
+		}
+	}
+*/

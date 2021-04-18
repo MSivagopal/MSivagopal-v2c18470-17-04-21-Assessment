@@ -1,0 +1,20 @@
+package prac2;
+
+public class FinallyExp {
+
+	public static void main(String[] args) {
+		try {
+			int ss[] = new int[5];
+			ss[7] = 143;
+			System.out.println("the value " +ss);
+		} 
+		catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println(e);
+			System.out.println("ArrayIndexOutOfBoundsException Error");
+		}
+		finally {
+			System.out.println("finally block will execute whether it has exception or not");
+		}
+	}
+
+}

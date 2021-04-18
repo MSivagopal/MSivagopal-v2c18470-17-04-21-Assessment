@@ -1,0 +1,23 @@
+package prac2;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class LinkedToArrayList {
+
+	public static void main(String[] args) {
+		LinkedList<String> st = new LinkedList<String>();
+		st.add("Master");
+		st.add("Jilla");
+		st.add("Gilli");
+		System.out.println("In LinkedList "+st);
+		ArrayList<String> ar = new ArrayList<String>();
+		
+			if (st != null) {
+				ar.addAll(st);
+			}
+		System.out.println("In ArrayList "+ar);
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package prac2;
+
+public class Divide0MultipleExp {
+
+	public static void main(String[] args) {
+		try {
+			int s[] = new int[5];
+			s[7] = 143/0;
+			System.out.println("the value " +s);
+		} 
+		catch (ArithmeticException e) {
+			System.out.println(e);
+			System.out.println("ArithmeticException Error");
+		}
+		catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println(e);
+			System.out.println("ArrayIndexOutOfBoundsException Error");
+		}
+	}
+
+}

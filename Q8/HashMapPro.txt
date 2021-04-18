@@ -1,0 +1,22 @@
+package prac2;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+
+public class HashMapPro {
+
+	public static void main(String[] args) {
+		HashMap<Integer, String> map = new HashMap<Integer, String>();
+		map.put(121, "Master");
+		map.put(150, "Theri");
+		map.put(110, "Sarkar");
+
+		Set<Integer> s = map.keySet();
+		Iterator<Integer> obj = s.iterator();
+		while (obj.hasNext()) {
+			Integer t = obj.next();
+			System.out.println("collections: " + t + " " + "Movie: " + map.get(t));
+		}
+	}
+}
